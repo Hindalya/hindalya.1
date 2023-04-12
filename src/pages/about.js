@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   margin-bottom: 1rem;;
   font-weight:bold;
+  text-transform: capitalize;
 `;
 
 const Heading = styled.h2`

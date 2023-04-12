@@ -3,10 +3,16 @@ import Cards from '../../components/Cards';
 import Languages from '../../components/Languages';
 import Link  from "next/link";
 import { Divider } from '@mui/material';
+import Image from 'next/image';
 
-const StyledLink = styled.a`
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`;
+const StyledLink = styled.li`
   color: black;
-  text-decoration: none;
+  list-style: none;
 
   &:hover {
     text-decoration: underline;
@@ -17,20 +23,27 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem;
+  padding: 5rem 0 0 0;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction:column-reverse;
+    margin-bottom: 2rem;
+
   }
 `;
 const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin-left: 5rem;
   @media (max-width: 768px) {
-    margin-top: 2rem;
+    margin:0 2.5rem;
   }
   `;
   const Right = styled.div`
@@ -39,10 +52,6 @@ const Left = styled.div`
   align-items: center;
   justify-content: right;
   `;
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-`;
 const Title = styled.h1`
   font-size: 48px;
   font-weight: bold;
@@ -67,20 +76,25 @@ const Button = styled.button`
 
 const Home = () => {
   return (
-    <div>
+    <>
     <Wrapper>
-    <Left>
-      <Title>Welcome to your professional developer community</Title>
-      <Subtitle>Let's Spread The Knowledge And Kindness Everywhere</Subtitle>
-        <Link href="/courses">
-          <Button>Get Started</Button>
-        </Link>
+      <Left>
+        <Title>Welcome to our professional community of humanity.</Title>
+        <Subtitle>Let's Spread The Knowledge And Kindness Everywhere</Subtitle>
+          <Link href="/courses">
+            <Button>Get Started</Button>
+          </Link>
       </Left>
 
       <Right>
-        <Image 
+        <StyledImage
         src={`/assets/images/LandingPageImage.jpeg`}
-        alt="CoverImage" />
+        alt="CoverImage" 
+        width={500}
+        height={500}
+        loading='lazy'
+        />
+        
       </Right>
 
     </Wrapper>
@@ -88,7 +102,7 @@ const Home = () => {
     <Languages/>
       <Divider />
     <Cards/>
-    </div>
+    </>
   )
 }
 

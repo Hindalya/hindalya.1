@@ -10,7 +10,7 @@ import styled from "styled-components";
   justify-content:center;
   align-items:center;
     `;
-  const Container = styled.div`
+  const Container = styled.form`
   Display:flex;
   min-width: 22rem;
   flex-direction:column;
@@ -121,7 +121,7 @@ const Login = () => {
             <IMG 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsl2kumCmOmP8h-4UCcJ8YNPcqKgrpUw8voNXg7T3VA&s"
               alt="Apple"/>
-            <Span>Coninue in with Google</Span>
+            <Span>Coninue in with Apple</Span>
           </Button>
           <Input>
           <Inputtag name="email" placeholder="Email" minLength={7} maxLength={64} required type="email"/>

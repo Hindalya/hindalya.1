@@ -1,44 +1,58 @@
 import styled from 'styled-components';
 import Grid from '@mui/material/Grid';
 import Link  from "next/link";
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   color: black;
-  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
 `;
 
-const Card = styled(Grid)`
-  text-align: center;
-  `;
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  `
+
 const ImageContaioner = styled.div`
   height: 3rem;
-`
-  const Logo = styled.img`    
-    width: 100%;
-    height: 3rem;
-    object-fit: contain;
+`;
 
-  `;
+const StyledImage = styled(Image)`
+    object-fit: contain;
+    width: 3rem;
+    height: 3rem;
+`;
 
 const Span = styled.p`
-  margin-top: .5rem;
-`
+  margin-top: 1rem;
+`;
 
 const Courses = ({item}) => {
+  const router = useRouter();
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(item.name)
+  }
   return (
-    <Card item xs={2} sm={2} md={2}>
+    <Grid item xs={2} sm={2} md={2}>
+      <Container>
         <ImageContaioner>
-        <Logo
+        <StyledImage 
             src={item.image}
-            alt='item.name'  
+            alt='item.name' 
+            width={50}
+            height={50}
         />
         </ImageContaioner>
-        <StyledLink><Span>{item.name}</Span></StyledLink>
-    </Card>
+        <StyledLink href={`${item.name}`} onClick={handleClick}><Span>{item.name}</Span></StyledLink>
+        </Container>
+    </Grid>
   )
 }
 

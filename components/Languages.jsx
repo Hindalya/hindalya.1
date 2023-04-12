@@ -19,6 +19,7 @@ const Title = styled.h1`
   margin-bottom: 3rem;;
   font-weight:500;
   width: fit-content;
+  font-size: 2.5rem;
 `;
 const Languages = () => {
    const arr = [

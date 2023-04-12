@@ -11,6 +11,7 @@ const LatestProjects = styled.div`
 const Title = styled.h1`
   margin-bottom: 20px;;
   font-weight:500;
+  font-size: 2rem;
 `;
 const Cards = () => {
   let arr = [1, 2, 3, 4, 5, 6];

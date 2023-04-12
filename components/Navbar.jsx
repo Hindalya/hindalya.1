@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 import SearchIcon from '@mui/icons-material/Search';
 import Link  from "next/link";
+import Image from 'next/image';
 import { Button} from '@mui/material';
 import Drawer from './Drawer';
 
-const StyledLink = styled.a`
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`;
+
+const StyledLink = styled.li`
   color: black;
-  text-decoration: none;
+  list-style: none;
   margin-Right: 1rem;
   cursor:pointer;
   font-size:18px;
@@ -40,12 +47,6 @@ const Contener = styled.header`
   align-items: center;
   `;
 
-  const Logo = styled.img`
-      cursor:pointer;
-      height: 5rem;
-      width:10rem;
-  `;
-
   const Center = styled.div`
     flex: 1;
     display: flex;
@@ -67,7 +68,7 @@ const Contener = styled.header`
       outline: none;
     }
   `;
-const Right = styled.div`
+const Right = styled.ul`
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -84,8 +85,11 @@ const Navbar = () => {
       <Left>
         <Drawer/>
         <Link href="/">
-        <Logo src = {`/assets/images/logo.jpeg`}
-        alt = "logo"/>
+        <StyledImage src = {`/assets/images/logo.jpeg`}
+        alt = "logo"
+        width={200}
+        height={100}
+        />
         </Link>
       </Left>
           
@@ -97,9 +101,10 @@ const Navbar = () => {
       </Center>
 
       <Right>
-      <Link href="/"><StyledLink>Home</StyledLink></Link>
+      <Link href="/"><StyledLink >Home</StyledLink></Link>
       <Link href="/courses"><StyledLink >Courses</StyledLink></Link>
       <Link href="/projects"><StyledLink>Projects</StyledLink></Link>
+      <Link href="/blog"><StyledLink>Blogs</StyledLink></Link>
       </Right>
       <NavButton>
       {

@@ -9,14 +9,20 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Link  from "next/link";
 import styled from 'styled-components';
 
-const StyledLink = styled.a`
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+const StyledListItemText = styled(ListItemText)`
+  cursor:pointer;
+  text-transform: capitalize;
+  text-align: center;
+
   &:hover {
     text-decoration: underline;
   }
 `;
+const StyledMenuIcon = styled(MenuIcon)`
+  cursor:pointer;
+  margin-right: 1rem;
+`;
+
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     left: false,
@@ -36,19 +42,19 @@ export default function SwipeableTemporaryDrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'My courses', 'Projects', 'About','Login'].map((text, index) => (
+        {['home', 'courses', 'projects', 'about','blog','login'].map((text, index) => (
           <ListItem key={text} disablePadding>
+          <Link href={`${text=="home" ? "/" : text}`}>
             <ListItemButton>
-            <StyledLink to={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>
-            <ListItemText primary={text} />
-            </StyledLink>
+            <StyledListItemText primary={text} />
             </ListItemButton>
+          </Link>
           </ListItem>
         ))}
       </List>
@@ -59,7 +65,7 @@ export default function SwipeableTemporaryDrawer() {
     <>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-         <MenuIcon onClick={toggleDrawer(anchor, true)}/>
+         <StyledMenuIcon onClick={toggleDrawer(anchor, true)}/>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
