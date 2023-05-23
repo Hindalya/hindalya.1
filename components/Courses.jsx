@@ -37,7 +37,7 @@ const Courses = ({item}) => {
   const router = useRouter();
   const handleClick = (e) => {
     e.preventDefault()
-    router.push(item.name)
+    router.push(`courses/${item.name}`)
   }
   return (
     <Grid item xs={2} sm={2} md={2}>
@@ -50,7 +50,7 @@ const Courses = ({item}) => {
             height={50}
         />
         </ImageContaioner>
-        <StyledLink href={`${item.name}`} onClick={handleClick}><Span>{item.name}</Span></StyledLink>
+        <StyledLink href={`courses/${item.name}`} onClick={handleClick}><Span>{item.name}</Span></StyledLink>
         </Container>
     </Grid>
   )
