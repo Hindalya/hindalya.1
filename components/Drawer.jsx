@@ -48,9 +48,9 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['home', 'courses', 'projects', 'about','blog','login'].map((text, index) => (
+        {['home', 'courses', 'projects', 'about','blogs','login'].map((text, index) => (
           <ListItem key={text} disablePadding>
-          <Link href={`${text=="home" ? "/" : text}`}>
+          <Link href={`/${text=="home" ? "/" : text}`}>
             <ListItemButton>
             <StyledListItemText primary={text} />
             </ListItemButton>

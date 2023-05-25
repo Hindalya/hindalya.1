@@ -30,7 +30,7 @@ const NavButton = styled.div`
 
 const Contener = styled.header`
     margin-bottom: 1rem;
-    height: 5rem;
+    height: 3.5rem;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-between;
@@ -104,7 +104,7 @@ const Navbar = () => {
       <Link href="/"><StyledLink >Home</StyledLink></Link>
       <Link href="/courses"><StyledLink >Courses</StyledLink></Link>
       <Link href="/projects"><StyledLink>Projects</StyledLink></Link>
-      <Link href="/blog"><StyledLink>Blogs</StyledLink></Link>
+      <Link href="/blogs"><StyledLink>Blogs</StyledLink></Link>
       </Right>
       <NavButton>
       {

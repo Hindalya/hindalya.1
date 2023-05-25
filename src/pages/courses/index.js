@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Languages from "../../components/Languages";
+import Languages from "../../../components/Languages";
 
 const Wrapper = styled.div`
   padding-top:5rem;
