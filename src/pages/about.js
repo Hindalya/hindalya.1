@@ -9,16 +9,23 @@ const Wrapper = styled.div`
   margin:0 1rem 3rem 1rem;
 `;
 
+
 const Title = styled.h1`
-  margin-bottom: 1rem;;
-  font-weight:bold;
-  text-transform: capitalize;
+font-size: 1.6rem;
+margin-bottom: 0.5rem;
+text-transform: uppercase;
+font-weight: bold;
+color:hsl(100,70%,50%)
 `;
 
-const Heading = styled.h2`
-  margin: 1rem;;
-  font-weight:bold;
-  `;
+const Heading = styled.h1`
+  font-size: 1.5rem;
+  margin-top:1rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:hsl(100,70%,50%)
+`;
   
 const  Text = styled.p`
   font-size: 1.2rem;
