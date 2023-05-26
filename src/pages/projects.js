@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Cards from '../../components/Cards'
+import Cards from '../components/projects/Cards'
 const Wrapper = styled.div`
   padding-top:5rem;
 `;

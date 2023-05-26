@@ -21,7 +21,7 @@ const Course = () => {
       </Head>
       <div className={styles.container}>
       <div className={styles.courseHeader}>
-        <img src="/course-image.png" alt="Course Image" className={styles.courseImage} />
+        <img src="" alt="Course Image" className={styles.courseImage} />
         <div className={styles.courseInfo}>
           <h1>Course Title</h1>
           <p>Course Description</p>

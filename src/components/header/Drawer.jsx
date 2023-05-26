@@ -50,7 +50,7 @@ export default function SwipeableTemporaryDrawer() {
       <List>
         {['home', 'courses', 'projects', 'about','blogs','login'].map((text, index) => (
           <ListItem key={text} disablePadding>
-          <Link href={`/${text=="home" ? "/" : text}`}>
+          <Link href={`/${text=="home" ? "" : text}`}>
             <ListItemButton>
             <StyledListItemText primary={text} />
             </ListItemButton>

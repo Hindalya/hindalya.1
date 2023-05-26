@@ -15,6 +15,7 @@ const Container = styled.div`
 const Text = styled.p`
   font-size: 1rem;
   color:gray;
+  text-align: justify;
   `
 const Heading = styled.h1`
   font-size: 1.5rem;
@@ -41,10 +42,12 @@ const Blogs = ({data}) => {
     >
     {
       data.map((ele) =>{
-        return <Container id={ele.id}>
+        return <Container key={ele.id}>
           <Heading>{ele.id+1}.{ele.title}</Heading>
-          <Text>{ele.content.p1}...</Text>
-          <Link href={`/blogs/${ele.title}`}><Button>Read More</Button></Link>
+          <Text>
+            {ele.content.p1}
+          ...<Link href={`/blogs/${ele.title}`}><Button>Read More</Button></Link>
+          </Text>
       </Container>
       })
     }

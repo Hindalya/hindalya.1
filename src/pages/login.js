@@ -78,7 +78,8 @@ import styled from "styled-components";
     `;
     const Pera = styled.p`
     font-size: .9rem;
-    margin-bottom: 0.8rem;`
+    margin-bottom: 0.8rem;
+    `;
 
     const LoginButton = styled.button`
     margin-top: 0.4rem;
@@ -103,7 +104,7 @@ const Login = () => {
   return (
     <Wrapper>
       <Div>
-        <Container>
+        <Container id="loginForm">
           <Title>Log in to your Hindalya account</Title>
           <Button> 
             <IMG 

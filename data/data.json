@@ -4,7 +4,7 @@
       "id": 0,
       "title": "Microfinance",
       "author": "Ankit Mishra",
-      "intro":"Microfinance has become an important tool for inclusive and sustainable growth in India.The concept of microfinance originated from Self help Group Bank Linkage Programme (SHG-BLP) that emerged as a result of an action research project conducted by MYRADA in 1989, commissioned by NABARD.State of Microfinance in India- It contributes about 1.3 crore jobs and 2% of our GVA as per a NCAER study. RBI recently defined microfinance as collateral free loans given to household having annual income upto 3 lakhs.",
+      "intro":"Microfinance has become an important tool for inclusive and sustainable growth in India.The concept of microfinance originated from Self help Group Bank Linkage Program (SHG-BLP) that emerged as a result of an action research project conducted by MYRADA in 1989, commissioned by NABARD.State of Microfinance in India- It contributes about 1.3 crore jobs and 2% of our GVA as per a NCAER study. RBI recently defined microfinance as collateral free loans given to household having annual income upto 3 lakhs.",
       "description": "My blog post description",
       "content": {
           "p1":"ChatGPT utilizes a deep learning architecture called GPT (Generative Pre-trained Transformer). This model is trained using a massive dataset containing parts of the internet, including articles, books, websites, and more. By learning from such extensive information, ChatGPT can generate text that exhibits impressive fluency and coherence.",
@@ -18,12 +18,12 @@
     },
     {
       "id": 1,
-      "title": "How to Write a Blog Post",
-      "author": "John Doe",
-      "intro":"",
+      "title": "How to Earn Money Online: A Comprehensive Guide",
+      "author": "Amul Sharma",
+      "intro":"In today's digital age, the internet has opened up a plethora of opportunities for individuals to earn money online. Whether you're looking to supplement your income or pursue a full-time online career, there are various avenues available that can help you achieve your financial goals. In this blog post, we'll explore some effective strategies and platforms that can enable you to earn money online.",
       "description": "My Blog Post Description",
       "content": {
-          "p1":"ChatGPT utilizes a deep learning architecture called GPT (Generative Pre-trained Transformer). This model is trained using a massive dataset containing parts of the internet, including articles, books, websites, and more. By learning from such extensive information, ChatGPT can generate text that exhibits impressive fluency and coherence.",
+          "p1":"Freelancing:Freelancing has become increasingly popular in recent years, offering individuals the chance to utilize their skills and expertise to provide services to clients worldwide. Platforms like Upwork, Freelancer, and Fiverr connect freelancers with clients seeking assistance in areas such as writing, graphic design, programming, marketing, and more. By creating a compelling profile and showcasing your abilities, you can attract clients and secure paid projects.",
           "p2":"The model is trained in a self-supervised manner, where it learns to predict the next word in a sentence based on the preceding context. This process helps ChatGPT capture various linguistic patterns and syntactic structures, enabling it to generate text that mimics human speech.",
           "p3": "The versatility of ChatGPT allows it to be used for a wide range of applications. It can assist users in writing articles, generating code, answering questions, offering recommendations, providing customer support, and even creating interactive storytelling experiences. Its adaptability and potential make it a valuable tool across numerous industries and domains."
         },

@@ -20,17 +20,14 @@ const Container = styled.div`
   `
 
 const ImageContaioner = styled.div`
-  height: 3rem;
-`;
-
-const StyledImage = styled(Image)`
-    object-fit: contain;
-    width: 3rem;
-    height: 3rem;
+  
+  width: 40px;
+  height: 50px;
 `;
 
 const Span = styled.p`
-  margin-top: 1rem;
+  margin-top: auto;
+  position: relative;
 `;
 
 const Courses = ({item}) => {
@@ -43,11 +40,11 @@ const Courses = ({item}) => {
     <Grid item xs={2} sm={2} md={2}>
       <Container>
         <ImageContaioner>
-        <StyledImage 
+        <Image 
             src={item.image}
             alt='item.name' 
-            width={50}
-            height={50}
+            width={30}
+            height={30}
         />
         </ImageContaioner>
         <StyledLink href={`courses/${item.name}`} onClick={handleClick}><Span>{item.name}</Span></StyledLink>

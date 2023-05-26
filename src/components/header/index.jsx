@@ -5,12 +5,6 @@ import Image from 'next/image';
 import { Button} from '@mui/material';
 import Drawer from './Drawer';
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-`;
-
 const StyledLink = styled.li`
   color: black;
   list-style: none;
@@ -85,7 +79,7 @@ const Navbar = () => {
       <Left>
         <Drawer/>
         <Link href="/">
-        <StyledImage src = {`/assets/images/logo.jpeg`}
+        <Image src = {`/assets/images/logo.jpeg`}
         alt = "logo"
         width={200}
         height={100}

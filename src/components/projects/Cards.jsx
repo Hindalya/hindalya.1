@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Card from "../components/Card.jsx";
+import Card from "./Card.jsx";
 import Grid from '@mui/material/Grid';
 
 const LatestProjects = styled.div`

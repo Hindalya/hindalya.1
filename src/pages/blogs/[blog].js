@@ -30,9 +30,12 @@ const Subheading = styled.h3`
 `
 const Content = styled.p`
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 1.7rem;
   color: #333;
+  text-align: justify;
   margin-bottom: 1rem;
+  margin: 0.5rem;
+  letter-spacing: .005rem;
 `
 
 const Blog = ({data}) => {

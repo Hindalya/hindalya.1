@@ -1,15 +1,10 @@
 import styled from 'styled-components';
-import Cards from '../../components/Cards';
-import Languages from '../../components/Languages';
+import Cards from '../components/projects/Cards';
+import Languages from '../components/courses';
 import Link  from "next/link";
 import { Divider } from '@mui/material';
 import Image from 'next/image';
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-`;
 const StyledLink = styled.li`
   color: black;
   list-style: none;
@@ -87,7 +82,7 @@ const Home = () => {
       </Left>
 
       <Right>
-        <StyledImage
+        <Image
         src={`/assets/images/LandingPageImage.jpeg`}
         alt="CoverImage" 
         width={500}
