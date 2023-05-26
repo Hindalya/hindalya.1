@@ -1,0 +1,72 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .courseHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .courseImage {
+    width: 50%;
+    max-width: 400px;
+    margin-right: 2rem;
+  }
+  
+  .courseInfo {
+    width: 50%;
+  }
+  
+  .priceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .enrollButton {
+    background-color: #0070f3;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .courseContent {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .courseLessons {
+    width: 30%;
+  }
+  
+  .lessonDetails {
+    width: 65%;
+  }
+  
+  .ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .lessonDetails h2 {
+    margin-top: 0;
+  }
+  
+  .lessonDetails p {
+    margin-top: 1rem;
+  }
+  

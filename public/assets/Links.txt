@@ -1,0 +1,6 @@
+obj = {
+    favicon:"https://iili.io/HO3ry7a.md.png",
+    Books:  "https://iili.io/HO36eK7.th.png",
+    Logo : "https://iili.io/HO36kl9.th.png",
+    cover: "https://iili.io/HO36vSe.th.png",
+}
