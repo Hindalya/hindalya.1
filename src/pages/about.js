@@ -44,29 +44,15 @@ const About = () => {
   return (
     <Wrapper>
       <Title>About Us</Title>
-      <Text>Welcome to Hindalya, a place where creativity, innovation, and academic excellence thrive.
-       We are a leading institution of higher learning that offers a wide range of undergraduate and graduate programs to 
-       students from around the world.</Text>
-      <Text>Our mission is to provide a rigorous and inspiring academic environment that prepares students for success in their chosen fields. 
-      We are committed to fostering a diverse and inclusive community that values scholarship, research, and service.</Text>
+      <Text>Hindalya is an innovative web application designed to revolutionize the way students and professionals access academic resources and receive mentorship. The platform aims to empower individuals by providing free access to a vast range of educational materials, including projects, assignments, courses, and blogs. Hindalya serves as a comprehensive learning hub that caters to diverse educational needs and fosters continuous growth.</Text>
+      <Text>In addition to the abundant academic resources, Hindalya offers an affordable mentorship program that connects learners with experienced professionals in their respective fields. The mentorship program is designed to provide personalized guidance, allowing individuals to receive expert advice, career insights, and tailored learning paths. By bridging the gap between mentors and mentees, Hindalya aims to foster meaningful connections and inspire learners to achieve their educational and professional goals.</Text>
 
-      <Heading>Our History</Heading>
-      <Text>Hindalya was imagind in 2009 by a group of visionary students who sought to create a new kind of University/Institution. 
-      Where they learned to think critically, solve complex problems, and make a positive impact on the world after their each mistake.
-      From our humble beginnings, we have grown into a world-renowned institution that attracts some of the brightest minds in academia.</Text>
+      <Text>The platform is built with a user-centric approach, focusing on intuitive navigation and an engaging user interface. Users can create personalized profiles to track their progress, bookmark favorite resources, and receive recommendations based on their interests and learning objectives. Hindalya's search and recommendation engine employs advanced algorithms to deliver targeted and relevant content, enhancing the overall learning experience.
+      </Text>
+      <Text>With Hindalya, students and professionals no longer face barriers to accessing high-quality educational resources and mentorship. The platform opens doors to new opportunities, encourages lifelong learning, and nurtures a vibrant community of knowledge seekers. Hindalya is poised to transform the educational landscape by empowering individuals to unlock their full potential and excel in their academic and professional endeavors.</Text>
 
-      <Heading>Our Campus</Heading>
-      <Text>Our campus is located in the heart of the virtual world, with easy access to public and a wide range of cultural 
-      and recreational activities. We boast state-of-the-art facilities, including cutting-edge laboratories, a modern library, and 
-      high-tech classrooms.</Text>
-
-      <Heading>Our Faculty</Heading>
-      <Text>Our faculty members are experts in their fields who are dedicated to teaching, research, and mentorship. They are committed to providing students with a challenging and supportive learning environment that fosters intellectual curiosity and creativity.and the fun fact is: <HighLight> it's a  fictional character that will be made by us in future.</HighLight></Text>
-      <Heading>Our Students</Heading>
-      <Text>Our students come from all walks of life and from all corners of the globe. They are passionate, driven, and committed to making a difference in the world. They are leaders in their communities and in their fields, and they bring a wealth of experience and diversity to our site.</Text>
-      <Heading>Our Alumni</Heading>
-      <Text>Our alumni are leaders in their fields, making an impact in their communities and around the world. They are entrepreneurs, innovators, and change-makers who have gone on to accomplish great things in a wide range of industries.</Text>
-      <Text>Thank you for your interest in Hindalya. We invite you to explore our website and learn more about our programs, and our students.</Text>
+      <Text>Through Hindalya, the future of learning is within reach, offering a seamless, inclusive, and accessible platform that propels individuals towards success in their educational journeys.</Text>
+      
     </Wrapper>
   )
 }
