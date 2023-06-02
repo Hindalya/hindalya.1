@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Avatar from '@mui/material/Avatar';
+import Link from 'next/link';
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -34,8 +35,12 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
+        <Link href="/profile">
         <MenuItem onClick={handleClose}>Profile</MenuItem>
+        </Link>
+        <Link href="/">
         <MenuItem onClick={handleClose}>My account</MenuItem>
+        </Link>
         <MenuItem onClick={handleClose}>Logout</MenuItem>
       </Menu>
     </>

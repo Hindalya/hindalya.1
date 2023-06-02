@@ -30,7 +30,7 @@ const UserProfile = () => {
           <div className={styles.profileCover}>
             <Image 
             className={styles.profileCoverImg}
-            width={1000} 
+            width={800} 
             height={200} 
             src={`/assets/images/darkbg.png`}
             alt="Profile Picture" 

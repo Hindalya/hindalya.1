@@ -1,4 +1,5 @@
 import { Divider } from "@mui/material";
+import Link from "next/link";
 import styled from "styled-components";
 
   const Wrapper = styled.div`
@@ -134,7 +135,11 @@ const Login = () => {
         </Container>
         <Pera>or <Span style={{color:'blue'}}>Forgot Password</Span></Pera>
         <Divider/>
-        <Pera>Don't have an account? <Span style={{color:'blue'}}>Sign up</Span></Pera>
+        <Pera>Don't have an account? 
+          <Link href="./register">
+            <Span style={{color:'blue'}}>Sign up</Span>
+          </Link>
+        </Pera>
       </Div>
     </Wrapper>
   )

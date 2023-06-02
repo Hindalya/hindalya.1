@@ -4,7 +4,7 @@ import Link  from "next/link";
 import Image from 'next/image';
 import { Button} from '@mui/material';
 import Drawer from './Drawer';
-
+import Menu from "./Menu";
 const StyledLink = styled.li`
   color: black;
   list-style: none;
@@ -102,7 +102,7 @@ const Navbar = () => {
       </Right>
       <NavButton>
       {
-        user ? <Menu/>:<Link href="/login"><Button color="inherit"><StyledLink>Login</StyledLink></Button></Link>
+        user ? <Menu/>:<Link href="account/login"><Button color="inherit"><StyledLink>Login</StyledLink></Button></Link>
       }
       </NavButton> 
     </Contener>        
