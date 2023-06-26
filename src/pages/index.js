@@ -76,7 +76,7 @@ const Home = () => {
       <Left>
         <Title>Welcome to our professional community of humanity.</Title>
         <Subtitle>Let's Spread The Knowledge And Kindness Everywhere</Subtitle>
-          <Link href="/courses">
+          <Link href="/blogs">
             <Button>Get Started</Button>
           </Link>
       </Left>

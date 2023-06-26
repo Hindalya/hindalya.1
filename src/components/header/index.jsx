@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { Button} from '@mui/material';
 import Drawer from './Drawer';
 import Menu from "./Menu";
+import { useSession } from 'next-auth/react';
+
 const StyledLink = styled.li`
   color: black;
   list-style: none;
@@ -73,6 +75,8 @@ const Right = styled.ul`
 
 
 const Navbar = () => {
+  // const session = useSession();
+  // console.log(session);
   const user = false;
   return (
     <Contener>
@@ -102,7 +106,10 @@ const Navbar = () => {
       </Right>
       <NavButton>
       {
-        user ? <Menu/>:<Link href="account/login"><Button color="inherit"><StyledLink>Login</StyledLink></Button></Link>
+        user ? <Menu/>:
+        <Link href="account/login">
+          <Button color="inherit"><StyledLink>Login</StyledLink></Button>
+        </Link>
       }
       </NavButton> 
     </Contener>        

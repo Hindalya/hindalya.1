@@ -107,24 +107,6 @@ const Signup = () => {
       <Div>
         <Container id="loginForm">
           <Title>Resgister yourself with Hindalya</Title>
-          <Button> 
-            <IMG 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1PJmT_THldF0n5APcmt9p10utgu6KSw4cH2fQ5Xhpw&s"
-            alt="Google"/>
-            <Span>Coninue in with Google</Span>
-          </Button>
-          <Button> 
-            <IMG 
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png"
-            alt="Facebook"/>
-            <Span>Coninue in with Facebook</Span>
-          </Button>
-          <Button> 
-            <IMG 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsl2kumCmOmP8h-4UCcJ8YNPcqKgrpUw8voNXg7T3VA&s"
-              alt="Apple"/>
-            <Span>Coninue in with Apple</Span>
-          </Button>
           <Input>
           <Inputtag name="fullName" placeholder="Enter Your full Name" minLength={6} maxLength={30} required type="text"/>
           </Input>
